@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "-------------------------------"
-echo "USERNAME        TANGGAL EXPIRED"
+echo "USERNAME        GALIOJIMO DATA"
 echo "-------------------------------"
 while read idwx
 do
@@ -14,5 +14,5 @@ do
 done < /etc/passwd
 JUMLAH="$(awk -F: '$3 >= 500 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
 echo "-------------------------------"
-echo "Jumlah akun: $JUMLAH user"
+echo "Surasta: $JUMLAH useriai"
 echo "-------------------------------"
