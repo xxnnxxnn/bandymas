@@ -1,6 +1,5 @@
 #!/bin/bash
-# Script Auto Installer by Indoworx
-# www.indoworx.com
+# Script Auto Installer by Gatyto
 echo "" > /root/infouser.txt
 echo "" > /root/expireduser.txt
 echo "" > /root/alluser.txt
@@ -40,6 +39,6 @@ for((i=1; i<=$totalaccounts; i++ ))
 done
 echo " "
 echo ""
-echo "Cek User Expired Berhasil !!!"
+echo "Patikrinkite, ar vartotojo pasibaigė galiojimo laikas !!!"
 echo " "
 echo " " 
