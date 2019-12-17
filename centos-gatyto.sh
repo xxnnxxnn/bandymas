@@ -376,20 +376,20 @@ echo "User     : $dname"  | tee -a log-install.txt
 echo "Password : $dname@gatyto"  | tee -a log-install.txt
 echo "sudo aktivuotas vartotojui $dname"  | tee -a log-install.txt
 echo "" | tee -a log-install.txt
-echo "Script Command"  | tee -a log-install.txt
-echo "--------------"  | tee -a log-install.txt
+echo "Scripto Komandos"  | tee -a log-install.txt
+echo "\033------------------------------------\033"  | tee -a log-install.txt
 echo "speedtest --share : speedtest vps"  | tee -a log-install.txt
 echo "mem : ramai"  | tee -a log-install.txt
 echo "checkvirus : skenuoti virus / malware"  | tee -a log-install.txt
-echo "bench : untuk melihat performa vps" | tee -a log-install.txt
-echo "usernew : sukurti useri"  | tee -a log-install.txt
-echo "userlist : useriu listas"  | tee -a log-install.txt
+echo "bench      : untuk melihat performa vps" | tee -a log-install.txt
+echo "usernew    : sukurti useri"  | tee -a log-install.txt
+echo "userlist   : useriu listas"  | tee -a log-install.txt
 echo "userlimit <limit> : uzdeti limita <limit>. pvz: userlimit 1"  | tee -a log-install.txt
 echo "userlogin  : prisijungia useriai"  | tee -a log-install.txt
-echo "userdelete  : istrinti useri"  | tee -a log-install.txt
-echo "trial : sukurti vienos dienos testa"  | tee -a log-install.txt
-echo "renew : pratesti"  | tee -a log-install.txt
-echo "info : info VPS"  | tee -a log-install.txt
-echo "--------------"  | tee -a log-install.txt
+echo "userdelete : istrinti useri"  | tee -a log-install.txt
+echo "trial      : sukurti vienos dienos testa"  | tee -a log-install.txt
+echo "renew      : pratesti"  | tee -a log-install.txt
+echo "info       : info VPS"  | tee -a log-install.txt
+echo "--------------------------------------"  | tee -a log-install.txt
 echo "PASTABA: saugumo sumetimais, jei norite prisijungti prie pagrindinio serverio, naudokite 443 prievadą" | tee -a log-install.txt
 rm -f /root/centos-gatyto.sh
