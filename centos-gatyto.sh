@@ -18,7 +18,7 @@ read -p "Maksimalus prisijungimas useriui (pvz 1 arba 2): " llimit
 echo "Prasideda diegimio procesas gali trukti 15min ....."
 
 # Banner SSH
-echo "## VPS Gatyto $hnbaru ## " >> /etc/pesan
+echo "## VPS Gatyto menu $hnbaru ## " >> /etc/pesan
 echo "<br><br>
 <font color="#971221">
 
@@ -36,7 +36,7 @@ echo "1. Su situo serveriu negalima DDoS, Hacking, Phising, Spam, ir Torrentai; 
 echo "2. Maksimalus prisijngimas $llimit jai bus daugiau servas trins paskyra; " >> /etc/pesan
 echo "h1><font>=============================</font></h1>
 <h1><font color="blue">
-Force serveris ™
+Gatyto serveris ™
 </font></h1> " >> /etc/pesan
 echo "3. Vartotojas kuris bando pakenkti serveruj bus neatleidziama; " >> /etc/pesan
 echo "Server by $namap ( $nhp )" >> /etc/pesan
