@@ -1,11 +1,11 @@
 #!/bin/bash
-#Script untuk menghapus user
+#Script istrinti useri
 
-read -p "Hapus User : " Pengguna
+read -p "Userio vardas : " Pengguna
 
 if getent passwd $Pengguna > /dev/null 2>&1; then
         userdel $Pengguna
-        echo -e "User $Pengguna telah dihapus."
+        echo -e "Useris $Pengguna buvo istrintas."
 else
-        echo -e "GAGAL: User $Pengguna tidak ada."
+        echo -e "DEMESIO: Useris $Pengguna tokio nera."
 fi
