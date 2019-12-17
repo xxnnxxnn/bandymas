@@ -1,8 +1,8 @@
 #!/bin/bash
-# Program untuk membatasi jumlah login user dropbear
+# „Dropbear“ vartotojo prisijungimų skaičiaus ribojimas
 PARAM=$1
 
-echo "Semua user dropbear yang login lebih dari $1 akan di kill"
+echo "Visi „dropbear“ vartotojai, kurie prisijungia, yra daugiau nei $1 bus sunaikinti"
 echo -n > /tmp/pid2
 ps ax|grep dropbear > /tmp/pid
 cat /tmp/pid | grep -i 'dropbear -p' > /tmp/pids
@@ -74,8 +74,8 @@ rm -f /tmp/user2
 exit 0
 ;;
 *)
-  echo " gunakan perintah userlimit 1 untuk limit 1 login saja"
-  echo " atau userlimit 2  untuk melimit max 2 login"   
+  echo " naudokite komandą „userlimit 1“, norėdami apriboti tik 1 prisijungimą"
+  echo " arba „userlimit 2“, jei norite ne daugiau kaip 2 prisijungimu"   
 rm -f /tmp/pid
 rm -f /tmp/pid2
 rm -f /tmp/pids
