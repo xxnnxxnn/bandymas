@@ -1,11 +1,11 @@
 #!/bin/sh
 PFILE=/var/run/dropbear.pid
 if [ -e "${PFILE}" ] && (ps -p $(cat ${PFILE}) > /dev/null); then
-        echo "proses sedang berjalan..."
+        echo "procesas pradetas..."
         service dropbear status
         exit
 else
-        echo "proses tidak berjalan, restarting..."
+        echo "procesas neveikia, paleidžiamas iš naujo..."
         service dropbear restart
         exit 0
 fi
