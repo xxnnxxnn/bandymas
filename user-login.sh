@@ -1,9 +1,9 @@
 #!/bin/bash
 
 data=( `ps aux | grep -i dropbear | awk '{print $2}'`);
-echo "-----------------------------------------------";
-echo "------------ Dropbear Prisijungia -------------";
-echo "-----------------------------------------------";
+echo "-----------------------------------------";
+echo "------------ Dropbear prisijungia -------------";
+echo "-----------------------------------------";
 
 for PID in "${data[@]}"
 do
@@ -19,7 +19,7 @@ echo "-----------------------------------------";
 
 data=( `ps aux | grep "\[priv\]" | sort -k 72 | awk '{print $2}'`);
 
-echo "------------ OpenSSH login --------------";
+echo "------------ OpenSSH prisijungia --------------";
 echo "-----------------------------------------";
 for PID in "${data[@]}"
 do
@@ -32,10 +32,10 @@ do
         fi
 done
 
-echo "Untuk kill user log in, gunakan command  ";
+echo "Norėdami sunaikinti vartotojo prisijungimą, naudokite komandą  ";
 echo "kill -9 (nomerid)                        ";
-echo "contoh : kill -9 28651 ";
+echo "pvz : kill -9 28651 ";
 echo "-----------------------------------------";
-echo "--------------  pp  ---------------";
-echo "----------  .com  -----------";
+echo "---------------- Gatyto  ---------------";
+echo "------------- www.R&M.com  ------------";
 echo "-----------------------------------------";
