@@ -177,9 +177,9 @@ wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/xxnnxxnn/ban
 sed -i $MYIP2 /etc/openvpn/client.ovpn;
 #PASS=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`;
 useradd -g 0 -d /root/ -s /bin/bash $dname
-echo $dname:$dname"@2017" | chpasswd
+echo $dname:$dname"@gatyto" | chpasswd
 echo $dname > pass.txt
-echo $dname"@2017" >> pass.txt
+echo $dname"@gatyto" >> pass.txt
 tar cf client.tar client.ovpn pass.txt
 cp client.tar /home/vps/public_html/
 cp client.ovpn /home/vps/public_html/
@@ -373,7 +373,7 @@ echo "" | tee -a log-install.txt
 echo "Numatyta (paskira SSH ir VPN)"  | tee -a log-install.txt
 echo "---------------"  | tee -a log-install.txt
 echo "User     : $dname"  | tee -a log-install.txt
-echo "Password : $dname@2017"  | tee -a log-install.txt
+echo "Password : $dname@gatyto"  | tee -a log-install.txt
 echo "sudo aktivuotas vartotojui $dname"  | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "Script Command"  | tee -a log-install.txt
