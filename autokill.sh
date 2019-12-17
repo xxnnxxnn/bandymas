@@ -1,5 +1,5 @@
-# Script Auto Installer by Indoworx
-# www.indoworx.com
+# Script Auto Installer by Gatyto
+# 
 while :
   do 
   userlimit 1
@@ -15,3 +15,4 @@ while :
   #%./userexpired.sh
   #%sleep 36000
   #done
+
