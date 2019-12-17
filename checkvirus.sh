@@ -1,7 +1,7 @@
 #!/bin/bash
-#Script untuk memeriksa rootkit pada server menggunakan chkrootkit
-#By Khairil Gunawan
+#Script naudojama chkrootkit
+#By Gatyto
 
-echo "Memulai scanning file - file penting pada server"
+echo "Nuskaitomi failai serveryje"
 /root/chkrootkit/chkrootkit
-echo "Scanning file selesai"
+echo "Failu nuskaitymas baigtas"
