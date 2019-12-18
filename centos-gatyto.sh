@@ -4,7 +4,7 @@
 OS=`uname -p`;
 
 # serverio savininko duomenys
-echo read -p -e "\033[1;32mKoks tavo Vardas: \033m" namap
+echo -e read -p "\033[1;32mKoks tavo Vardas: \033m" namap
 read -p "Koks tavo telefono numeris: " nhp
 read -p "Ivesk serverio varda: " dname
 
