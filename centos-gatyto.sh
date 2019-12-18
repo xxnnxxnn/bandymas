@@ -4,12 +4,12 @@
 OS=`uname -p`;
 
 # serverio savininko duomenys
-read -p "Koks tavo Vardas: " namap
+read -p -e "\033[1;32mKoks tavo Vardas: \e[033m" namap
 read -p "Koks tavo telefono numeris: " nhp
 read -p "Ivesk serverio varda: " dname
 
 # pakeisti hostname
-echo -e "\033[1;32mTavo dabartinis Hostname vardas $HOSTNAME\033m"
+echo -e "\033[1;32mTavo dabartinis Hostname vardas $HOSTNAME\e[033m"
 read -p "Parasyk sito VPS varda arba pavadinima: " hnbaru
 echo "HOSTNAME=$hnbaru" >> /etc/sysconfig/network
 hostname "$hnbaru"
