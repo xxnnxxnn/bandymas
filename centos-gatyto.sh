@@ -9,7 +9,7 @@ read -p "Koks tavo telefono numeris: " nhp
 read -p "Ivesk serverio varda: " dname
 
 # pakeisti hostname
-echo "Tavo dabartinis Hostname vardas $HOSTNAME"
+echo -e "\033[1;32mTavo dabartinis Hostname vardas $HOSTNAME\033m"
 read -p "Parasyk sito VPS varda arba pavadinima: " hnbaru
 echo "HOSTNAME=$hnbaru" >> /etc/sysconfig/network
 hostname "$hnbaru"
