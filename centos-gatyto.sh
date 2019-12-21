@@ -140,7 +140,7 @@ cd
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/xxnnxxnn/bandymas/master/conf/nginx.conf"
 sed -i 's/www-data/nginx/g' /etc/nginx/nginx.conf
 mkdir -p /home/vps/public_html
-echo "<pre>Setup by Khairil G</pre>" > /home/vps/public_html/index.html
+echo "<pre>Gatyto VPS</pre>" > /home/vps/public_html/index.html
 echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
 rm /etc/nginx/conf.d/*
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/xxnnxxnn/bandymas/master/conf/vps.conf"
