@@ -256,7 +256,7 @@ chkconfig squid on
 
 # install webmin
 cd
-wget http://prdownloads.sourceforge.net/webadmin/webmin-1.930-1.noarch.rpm
+wget http://prdownloads.sourceforge.net/webadmin/webmin-1.830-1.noarch.rpm
 yum -y install perl perl-Net-SSLeay openssl perl-IO-Tty
 rpm -U webmin*
 rm -f webmin*
